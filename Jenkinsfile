@@ -14,7 +14,7 @@ pipeline {
         }
         stage('E2E Tests') {
             steps {
-                sh 'npx plawright test'
+                sh 'npx playwright test'
             }
         }
     
