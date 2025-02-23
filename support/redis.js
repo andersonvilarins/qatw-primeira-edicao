@@ -17,5 +17,5 @@ export const getJob = async () => {
 }
 
 export const cleanJobs = async () => {
-    await queue.obliterate()      // função que limpa a fila do redis 
+    await queue.obliterate({ force:true })      // função que limpa a fila do redis 
 }
